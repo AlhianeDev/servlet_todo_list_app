@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+* {
+	
+	margin: 0;
+	
+	padding: 0;
+	
+	box-sizing: border-box;
+	
+	font-weight: 400;
+	
+}
+
+body {
+	
+	min-height: 100vh;
+	
+	background-image: linear-gradient(100deg, #575656, #062e3f);
+	
+	color: #ffdfdb;
+	
+	font-family: 'Work Sans', sans-serif;
+	
+}
+
+.container {
+	
+	width: 100%;
+	
+	margin: 0 auto;
+	
+	padding: 0 15px;
+	
+}
+
+@media screen and (min-width: 768px) {
+	
+	.container {
+		
+		width: 790px;
+		
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+	
+	.container {
+		
+		width: 970px;
+		
+	}
+	
+}
+
+@media screen and (min-width: 1200px) {
+	
+	.container {
+		
+		width: 1170px;
+		
+	}
+	
+}
+
+a {
+	
+	text-decoration: none;
+	
+}
+
+ul {
+	
+	list-style: none;
+	
+}
+
+.sec {
+	
+	min-height: calc(100vh - 120px);
+	
+}
+
+.header .container {
+	
+	padding: 20px 15px;
+	
+	display: flex;
+	
+	justify-content: space-between;
+	
+	align-items: center;
+	
+}
+
+.header .brand a {
+	
+	color: rgb(247, 226, 223);
+	
+}
+
+.header .nav-links {
+	
+	display: flex;
+	
+}
+
+.header .nav-links a {
+	
+	padding: 0 15px;
+	
+	font-size: 17px;
+	
+	color: rgb(247, 226, 223);
+	
+}
+
+.landing,
+.contact {
+	
+	padding: 100px 0;
+	
+	text-align: center;
+	
+}
+
+.main-title {
+	
+	padding: 0 15px;
+	
+	margin-bottom: 50px;
+	
+	font-size: 100px;
+	
+	letter-spacing: 1px;
+	
+}
+
+.landing .main-form {
+	
+	display: flex;
+	
+    justify-content: center;
+	
+}
+
+.landing input,
+.contact input,
+.contact textarea {
+	
+	height: 40px;
+	
+	padding: 10px;
+	
+	border: none;
+	
+	font-size: 17px;
+	
+}
+
+.contact input,
+.contact textarea {
+	
+	display: block;
+	
+}
+
+.landing input:focus,
+.contact input:focus,
+.contact textarea:focus {
+	
+	outline: none;
+	
+}
+
+.landing input[type="text"],
+.contact input[type="text"],
+.contact textarea {
+	
+	width: 500px;
+	
+	background-color: #181a1a;
+	
+	border-top-left-radius: 15px;
+	
+	border-bottom-left-radius: 15px;
+	
+	color: rgb(247, 226, 223);
+	
+}
+
+.landing input[type="submit"],
+.contact input[type="submit"] {
+	
+	min-width: 100px;
+	
+	background-color: rgb(247, 226, 223);
+	
+	border-top-right-radius: 15px;
+	
+	border-bottom-right-radius: 15px;
+	
+	cursor: pointer;
+	
+}
+
+.contact input[type="text"],
+.contact textarea {
+	
+	width: 100% !important;
+	
+	border-radius: 15px;
+	
+	margin-bottom: 15px;
+	
+}
+
+.contact input[type="submit"] {
+	
+	border-radius: 15px;
+	
+}
+
+.contact textarea {
+	
+	height: 200px;
+	
+	resize: none;
+	
+}
+
+.view {
+	
+	padding: 50px 0;
+	
+	text-align: center;
+	
+}
+
+.view .container {
+	
+	width: 100%;
+	
+	display: flex;
+	
+	justify-content: center;
+	
+}
+
+.view .todo-list {
+	
+	min-width: 30%;
+	
+}
+
+.view .todo-list .todo {
+	
+	margin: 20px 0;
+	
+	padding: 10px;
+	
+	display: flex;
+	
+	justify-content: space-between;
+	
+	align-items: center;
+	
+	background-color: rgb(26, 27, 27);
+	
+	border-radius: 40px;
+	
+}
+
+.view .todo-list .todo.confirmed {
+	
+	opacity: 0.5;
+	
+}
+
+.view .todo-list .todo h3 {
+	
+	padding: 10px;
+	
+	font-size: 17px;
+	
+	color: rgb(247, 226, 223);
+	
+}
+
+.view .todo-list .todo.confirmed h3 {
+	
+	text-decoration: line-through;
+	
+}
+
+.view .todo-list .todo .actions {
+	
+	display: flex;
+	
+	gap: 15px;
+	
+	align-items: center;
+	
+}
+
+.view .todo-list .todo .actions a {
+	
+	display: block;
+	
+	width: 38px;
+	
+	height: 38px;
+	
+	display: flex;
+	
+	justify-content: center;
+	
+	align-items: center;
+	
+	background-color: rgb(247, 226, 223);
+	
+	border-radius: 50%;
+	
+	color: rgb(26, 27, 27);
+	
+}
+
+.view .todo-list .todo .actions a i {
+	
+	font-size: 17px;
+	
+}
+
+.error-msg {
+	
+	font-size: 18px;
+	
+}
+
+.footer {
+	
+	text-align: center;
+	
+}
+
+.footer .copyright a {
+	
+	color: #111;
+	
+}
